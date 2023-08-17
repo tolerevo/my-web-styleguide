@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:beforeh1 q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** Universal-styles **/
+:root {
+  --main-white: #f0f0f0;
+  --main-blue: #45567d;
+  --background-color: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  --main-red: #be3144;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  background-image: var(--background-color, gray );
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  display: inline-flex;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  background-image: var(--background-color, gray);
+  display: flex;
+  width: 100vw;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin-bottom: 10%;
+}
+
+footer {
+  display:block;
+  position:absolute;
+  background-image: var(--background-color, gray);
+  font-family: 'Montserrat', sans-serif, monospace;
+  font-weight: 400;
+  color: var(--main-white, whitesmoke);
+  bottom: 0px;
+  height: 2rem;
+  width: 100%;
+  text-align: right;
+  line-height: 1;
+}
+
+section.wrapper {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+h1.title {
+  display: block;
+  font-family: 'Montserrat', sans-serif, monospace ;
+  color: var(--main-white, whitesmoke);
+  font-weight: light;
+  font-size: 4rem;
+  top: 1em;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  letter-spacing: 1.2;
+  padding: 1rem 0;
+}
+
+section.wrapper{
+  display:inline-flex;
+  border: 2px solid var(--main-white,skyblue);
+  flex-flow: row wrap;
+  width: 30vw;
+  height: 50vh;
+  background-color: var(--main-blue, skyblue);
+  font-family: 'Roboto', sans-serif, monospace;
+  color: var(--main-white, red);
+  align-content: space-evenly;
+
+}
+
+div.container {
+  display:flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  margin: 10px;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+div.container.color {
+  display:flex;
+  padding: 10px;
+  width: 50%;
+  height: 14%;
+  flex-flow:column wrap;
+  border: 1px solid var(--main-white, whitesmoke);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif, monospace;
+  font-size: 10px;
+  opacity: none;
+
+}
+div.color#main-blue{
+  background-color: var(--main-blue);
+
+}
+
+div.color#main-white{
+  background-color: var(--main-white);
+  color: var(--main-blue);
+
+}
+
+div.color#main-red {
+  background-color: var(--main-red);
+}
+
+div.color#background-color {
+  background-image: var(--background-color, gray);
+}
